@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandresh Kerkar — Builder & Engineer</title>
+    <meta name="description"
+        content="Chandresh Kerkar — Software engineer, AI/ML builder, and hackathon founder. Building products with LLMs, mobile, fintech, and hardware." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">CK<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="https://github.com/true1ck" target="_blank" class="nav-cta">GitHub ↗</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for YC Hackathon 2025
+            </div>
+            <h1 class="hero-title">
+                I build things that<br />
+                <span class="gradient-text">actually ship.</span>
+            </h1>
+            <p class="hero-desc">
+                Software engineer turned product builder. I've shipped AI pipelines, macOS tools, trading algorithms,
+                and IoT systems — 57+ projects across 10+ languages. Currently at <strong>MediaTek</strong>, formerly
+                <strong>Infosys</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">Explore Proof of Work</a>
+                <a href="mailto:chandresh.kerkar123@gmail.com" class="btn-ghost">Start a Conversation</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">57+</span>
+                    <span class="stat-label">Shipping Repos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">Hackathons Won</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">Years Building</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">AI+IoT</span>
+                    <span class="stat-label">Deep Expertise</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about reveal" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-tag">Who I Am</div>
+                    <h2>Engineer. Builder. <span class="gradient-text">Hacker.</span></h2>
+                    <p>
+                        I'm Chandresh Kerkar — a full-stack engineer and compulsive builder. I move across the entire stack, from low-level hardware (Verilog/MIPS) to production AI pipelines (LLMs/RAG) and native mobile apps. 
+                    </p>
+                    <p>
+                        I don't just "write code"—I solve problems and ship products. Whether it's an algorithmic trading bot, a macOS tool with OCR, or an AI-powered workforce platform, my focus is always on <strong>velocity and impact</strong>. 
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏢</span>
+                            <div>
+                                <strong>MediaTek</strong>
+                                <span>Software Engineer Intern · Bengaluru</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏛️</span>
+                            <div>
+                                <strong>Infosys</strong>
+                                <span>Software Engineer · 2 Years</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏆</span>
+                            <div>
+                                <strong>MediaTek Hackathon 2025</strong>
+                                <span>Built AI workforce management platform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="tdot red"></span>
+                                <span class="tdot yellow"></span>
+                                <span class="tdot green"></span>
+                            </div>
+                            <span class="terminal-title">chandresh@builder ~ </span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">whoami</span></div>
+                            <div class="t-output">chandresh-kerkar</div>
+                            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">cat
+                                    skills.json</span></div>
+                            <div class="t-output t-json">{</div>
+                            <div class="t-output t-json">&nbsp;&nbsp;"ai": ["LLMs", "RAG", "Whisper", "Qwen VL"],</div>
+                            <div class="t-output t-json">&nbsp;&nbsp;"backend": ["Python", "Flask", "Node", "Prisma"],
+                            </div>
+                            <div class="t-output t-json">&nbsp;&nbsp;"mobile": ["Swift", "Kotlin", "Dart/Flutter"],
+                            </div>
+                            <div class="t-output t-json">&nbsp;&nbsp;"hardware": ["ESP32", "Verilog", "MIPS"],</div>
+                            <div class="t-output t-json">&nbsp;&nbsp;"current": "building 🚀"</div>
+                            <div class="t-output t-json">}</div>
+                            <div class="t-line t-blink"><span class="t-prompt">❯</span> <span
+                                    class="cursor-block">█</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects reveal" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Work</div>
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-desc">Hand-picked highlights from 57+ repositories. Real problems, real solutions.</p>
+            </div>
+
+            <!-- Featured Big Card -->
+            <div class="projects-featured">
+                <div class="project-card featured" data-tag="AI · Python · RAG">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🤖 AI / LLM</span>
+                            <span class="card-tag">Featured</span>
+                        </div>
+                        <h3>NetaBoard — AI Data Ingestion Platform</h3>
+                        <p>Production-grade AI pipeline that ingests YouTube videos, images (Qwen VL), PDFs, and audio.
+                            Single unified <code>/api/ingest</code> endpoint powers a full admin dashboard with
+                            intelligent content processing and multi-modal AI analysis.</p>
+                        <div class="card-tech">
+                            <span>Python</span><span>Flask</span><span>Qwen
+                                VL</span><span>Whisper</span><span>React</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/true1ck/AdminDashboard_DataIngestion" target="_blank"
+                                class="card-link">View Code ↗</a>
+                        </div>
+                    </div>
+                    <div class="card-visual ai-visual">
+                        <div class="ai-nodes">
+                            <div class="ai-node">YouTube</div>
+                            <div class="ai-node">PDF</div>
+                            <div class="ai-node">Audio</div>
+                            <div class="ai-node">Image</div>
+                            <div class="ai-center">⚡ AI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+
+                <div class="project-card" id="proj-rag">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🧠 LLM</span>
+                        </div>
+                        <h3>LLM-RAG for Intel Docs</h3>
+                        <p>Local CPU-based RAG system using Mistral to generate code and answers from Intel
+                            documentation. Fully offline, no cloud dependency.</p>
+                        <div class="card-tech">
+                            <span>Mistral</span><span>RAG</span><span>Python</span><span>LangChain</span>
+                        </div>
+                        <a href="https://github.com/true1ck/LLM-RAG-For-Intel-Documentation-CodeGen" target="_blank"
+                            class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-whisper">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">⚡ GPU</span>
+                        </div>
+                        <h3>GPU Parallel Transcription</h3>
+                        <p>High-performance parallel video transcription using OpenAI Whisper on GPU. True multi-model
+                            parallel processing pipeline for bulk video content.</p>
+                        <div class="card-tech">
+                            <span>Whisper</span><span>CUDA</span><span>Python</span><span>FFmpeg</span>
+                        </div>
+                        <a href="https://github.com/true1ck/gpu-whisper-transcription" target="_blank"
+                            class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-pandapaste">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🍎 macOS</span>
+                        </div>
+                        <h3>PandaPaste</h3>
+                        <p>Native macOS clipboard manager with OCR, favorites, smart search filters, and usage insights.
+                            Pure Swift, borderline magical UX.</p>
+                        <div class="card-tech">
+                            <span>Swift</span><span>macOS</span><span>Vision OCR</span><span>AppKit</span>
+                        </div>
+                        <a href="https://github.com/true1ck/pandapaste" target="_blank" class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-bse">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">📈 FinTech</span>
+                        </div>
+                        <h3>BSE AI — Market Intelligence</h3>
+                        <p>Extracts corporate announcements from BSE in real-time and applies AI to surface actionable
+                            insights via an interactive trading dashboard.</p>
+                        <div class="card-tech">
+                            <span>Python</span><span>AI</span><span>Web Scraping</span><span>Dashboard</span>
+                        </div>
+                        <a href="https://github.com/true1ck/BSE_AI" target="_blank" class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-trading">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">💹 AlgoTrading</span>
+                        </div>
+                        <h3>Algo Trading — Upstox</h3>
+                        <p>Algorithmic trading with MACD and RSI strategy backtesting via live APIs. Real capital
+                            strategies, not toy demos.</p>
+                        <div class="card-tech">
+                            <span>Python</span><span>Upstox API</span><span>MACD/RSI</span><span>Backtest</span>
+                        </div>
+                        <a href="https://github.com/true1ck" target="_blank" class="card-link">Private ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-attendo">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🏆 Hackathon</span>
+                        </div>
+                        <h3>Attendo AI</h3>
+                        <p>AI-powered workforce management platform built for MediaTek Hackathon 2025. Multi-role
+                            access, automated insights, Power Automate integration.</p>
+                        <div class="card-tech">
+                            <span>AI/ML</span><span>Power Automate</span><span>Multi-role</span>
+                        </div>
+                        <a href="https://github.com/true1ck/attendo" target="_blank" class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-iot">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🤖 IoT</span>
+                        </div>
+                        <h3>Autonomous Vehicle + Android</h3>
+                        <p>Full-stack autonomous vehicle system: Android app in Kotlin for WiFi-based remote navigation,
+                            ESP32 firmware, real-time Firebase updates.</p>
+                        <div class="card-tech">
+                            <span>Kotlin</span><span>ESP32</span><span>Firebase</span><span>Arduino</span>
+                        </div>
+                        <a href="https://github.com/true1ck/IOTESP32WifiDataCollection" target="_blank"
+                            class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-calendar">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">📱 Mobile</span>
+                        </div>
+                        <h3>AI Calendar (Smart Meeting Assistant)</h3>
+                        <p>Flutter-based smart meeting assistant with on-device Whisper model profiling. Handles
+                            scheduling, transcription, and AI-driven calendar management.</p>
+                        <div class="card-tech">
+                            <span>Flutter</span><span>Dart</span><span>Whisper</span><span>AI</span>
+                        </div>
+                        <a href="https://github.com/true1ck" target="_blank" class="card-link">Private ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-mips">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🔬 Hardware</span>
+                        </div>
+                        <h3>MIPS CPU with FPU</h3>
+                        <p>Full MIPS architecture implementation with a floating-point unit in Verilog. Low-level
+                            hardware design from scratch — pipeline stages, memory, ALU.</p>
+                        <div class="card-tech">
+                            <span>Verilog</span><span>MIPS</span><span>FPU</span><span>RTL</span>
+                        </div>
+                        <a href="https://github.com/true1ck/MIPS-Architecture-with-FPU" target="_blank"
+                            class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-urbanlink">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">🏘️ PropTech</span>
+                        </div>
+                        <h3>UrbanLink</h3>
+                        <p>Cross-platform brokerage firm management platform. Handles property listings, broker
+                            management, and client workflows across Dart and JS.</p>
+                        <div class="card-tech">
+                            <span>Dart</span><span>Flutter</span><span>PostgreSQL</span><span>JS</span>
+                        </div>
+                        <a href="https://github.com/true1ck/UrbanLink" target="_blank" class="card-link">View ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/true1ck?tab=repositories" target="_blank" class="btn-outline">
+                    See all 57+ repositories on GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="stack reveal" id="stack">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Arsenal</div>
+                <h2>My Tech <span class="gradient-text">Stack</span></h2>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <div class="stack-icon">🤖</div>
+                    <h4>AI / ML</h4>
+                    <div class="stack-pills">
+                        <span>Whisper</span><span>Qwen VL</span><span>Mistral</span><span>RAG</span>
+                        <span>LangChain</span><span>TensorFlow</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <div class="stack-icon">⚙️</div>
+                    <h4>Backend</h4>
+                    <div class="stack-pills">
+                        <span>Python</span><span>Flask</span><span>Node.js</span><span>TypeScript</span>
+                        <span>Prisma</span><span>PostgreSQL</span><span>SQLite</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <div class="stack-icon">📱</div>
+                    <h4>Mobile</h4>
+                    <div class="stack-pills">
+                        <span>Swift</span><span>Kotlin</span><span>Flutter</span><span>Dart</span>
+                        <span>Jetpack</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <div class="stack-icon">🌐</div>
+                    <h4>Frontend</h4>
+                    <div class="stack-pills">
+                        <span>React</span><span>Vite</span><span>JavaScript</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <div class="stack-icon">🔌</div>
+                    <h4>Hardware / IoT</h4>
+                    <div class="stack-pills">
+                        <span>ESP32</span><span>Arduino</span><span>Verilog</span><span>MIPS</span><span>C/C++</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <div class="stack-icon">🛠️</div>
+                    <h4>Tools</h4>
+                    <div class="stack-pills">
+                        <span>Git</span><span>Docker</span><span>Linux</span><span>CUDA</span><span>Power
+                            Automate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact reveal" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-orbs">
+                    <div class="corb corb-1"></div>
+                    <div class="corb corb-2"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="section-tag">Let's Build the Future</div>
+                    <h2>Ship something <span class="gradient-text">World Class.</span></h2>
+                    <p>I thrive in high-stakes environments where speed and technical depth are mandatory. If you're building for the YC hackathon or a moonshot startup, let's talk.</p>
+                    <div class="contact-links">
+                        <a href="mailto:chandresh.kerkar123@gmail.com" class="contact-link email">
+                            <span class="cl-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <span>chandresh.kerkar123@gmail.com</span>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                        <a href="https://github.com/true1ck" target="_blank" class="contact-link">
+                            <span class="cl-icon">🐙</span>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>github.com/true1ck</span>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chandreshkerkar" target="_blank" class="contact-link">
+                            <span class="cl-icon">💼</span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>chandresh-kerkar</span>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by Chandresh Kerkar · <a href="https://github.com/true1ck" target="_blank">@true1ck</a> ·
+                Bengaluru, India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
