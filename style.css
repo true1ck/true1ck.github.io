@@ -549,15 +549,28 @@ body {
   gap: 30px;
 }
 
-/* AI Visual Decoration */
+/* AI Visual Decoration & Mockups */
 .ai-visual {
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  min-height: 300px;
+  border-radius: 20px;
+  min-height: 400px;
   position: relative;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.phone-mockup {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .phone-mockup {
+  transform: scale(1.05) translateY(-5px);
 }
 
 .ai-nodes {
@@ -566,30 +579,6 @@ body {
   gap: 20px;
   justify-content: center;
   max-width: 300px;
-}
-
-.ai-node {
-  padding: 0.8rem 1.2rem;
-  background: var(--bg-dark);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-family: 'JetBrains Mono', monospace;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.ai-center {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: var(--gradient-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  box-shadow: 0 0 40px var(--accent-cyan);
-  z-index: 2;
 }
 
 /* Stack Section */
